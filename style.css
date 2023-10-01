@@ -1,0 +1,593 @@
+*body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background-color: rgb(36, 34, 34);
+    color:white;
+    font-family: 'poppins',sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-image: url(le.jpeg);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:azure;
+    font-size: 1rem;
+}
+a:hover{
+    color:yellow;
+    
+}
+header {
+    position:relative;
+    padding:0 2rem;
+}
+.dropdown-menu{
+    position:absolute;
+}
+.navbar{
+    width:100%;
+    height:60px;
+    max-width:1200px;
+    margin:0 auto;
+    align-items:center;
+    display:flex;
+    justify-content:space-between;
+   
+}
+
+.logo{
+    font-style: italic;
+    font-size: 30px;
+    color: black;
+    font-style: italic;
+}
+
+.navbar.logo a{
+    font-size:1.5rem;
+    font-weight:bold;
+    
+}
+.links{
+    display:flex;
+    gap:2rem;
+}
+.toggle_btn{
+    color:#ce350b;
+    font-size:1.5rem;
+    cursor: pointer;
+    display:none;
+}
+.action-btn{
+    background-color: green;
+    color:black;
+    padding: 12px 12px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    font-size:0.8rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:scale 0.2 ease;
+}
+.action-btn:hover{
+    scale:1.05;
+    color:aqua;
+}
+.action-btn:active{
+    scale:0.95;
+}
+.action-btn1{
+    background-color: green;
+    color:black;
+    padding: 12px 12px;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    font-size:0.8rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:scale 0.2 ease;
+}
+.action-btn1:hover{
+    scale:1.05;
+    color:aqua;
+}
+.action-btn1:active{
+    scale:0.95;
+}
+.dropdown-menu.open{
+    height:300px;
+}
+.dropdown-menu{
+    display:none;
+    position:absolute;
+    right:2rem;
+    top:60px;
+    height:0;
+    background:rgba(255, 255, 255, 0);
+    backdrop-filter:blur(15px);
+    border-radius:10px;
+    overflow:hidden;
+    transition:height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu li{
+    padding:0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+.action-btn1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+
+}
+section#hero{
+    height:calc(100vh-60px);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-size: 40px;
+}
+#hero h1{
+    font-size:3rem;
+    margin-bottom: 1rem;
+}
+main{
+    background-image: url(systum.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.rightsection img{
+width:100%;
+
+} */
+html{
+    scroll-behavior:smooth;
+}
+.purple{
+color: violet;
+}
+#element{
+color: violet;
+}
+.secondsection{
+max-width:80vw ;
+margin:auto;
+display: flexbox;
+}
+main hr{
+
+background-color:rgb(191, 35, 35);
+height:1.2px;
+margin:40px 80px;
+padding :1px;
+border:2px solid black;
+
+}
+.text-grey{
+color:grey;
+}
+
+.dab {
+display: flex;
+flex-direction: row; 
+
+}
+
+.vertical {
+height: 80px;
+width: 2px;
+background-color:black;
+margin: -35px 107px;
+display: flex;
+border:2px solid black;
+}
+.vertical-title{
+position:relative;
+white-space: nowrap;
+top:75px;
+width:150px;
+margin-top: 10px;
+
+}
+.vertical-desc{
+position: relative;
+top: 162px;
+font-size: 12px;
+color: rgba(94, 225, 98, 0.527);
+margin: 0 -139px;
+}
+footer{
+background-color: rgb(12, 10, 10);
+height: 233px;
+border:2px solid violet;
+border-radius:12px;
+}
+.footer{
+display:flex;
+margin:23px 133px;
+justify-content: space-evenly;
+}
+.footer ul{
+list-style:none;
+display: flex;
+color: rgb(139, 133, 126);
+
+}
+.footer ul li{
+list-style:none;
+display: flex;
+color: rgb(139, 133, 126);
+
+}
+.footer>div{
+width:223px;
+}
+.class-footer{
+text-align: center;
+margin-top: 50px;
+color:grey;
+}
+.buttons{
+display:flex;
+}
+#about{
+padding:80px 0;
+color: rgb(201, 191, 190);
+}
+.row{
+display:flex;
+justify-content:space-between;
+flex-wrap: wrap;
+}
+.about-col-1{
+flex-basis:35%;
+
+}
+.about-col-1 img{
+width: 90%;
+height: 75%;
+border-radius: 35px;
+padding: 0 20px;
+}
+.about-col-2{
+flex-basis:60%;
+
+}
+.sub-title{
+font-size: 60px;
+font-weight:600;
+color:rgb(150, 146, 211);
+}
+.tab-titles{
+display:flex;
+margin:20px 0 40px;
+}
+.tab-links{
+margin-right:50px;
+font-size: 18px;
+font-weight:500;
+cursor:pointer;
+position: center;
+}
+.tab-links.activelink::after{
+content:'';
+width:0;
+height:3px;
+background:#05001c;
+position :absolute;
+left:0;
+bottom:-8px;
+transition:0.5s;
+}
+
+.tab-contents ul li{
+list-style: none;
+margin:10px 0;
+}
+.tab-contents ul li span{
+color:red;
+font-size: 20px;
+}
+.tab-contents{
+display: none;
+}
+.tab-contents{
+display:block;
+}
+#services{
+padding:10px 0;
+}
+.services-list{
+display:grid;
+color:black;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top:50px;
+}
+.tab-links:hover{
+color:crimson;
+text-decoration: underline;
+}
+.services-list div{
+padding:30px ;
+background-color:rgb(14, 13, 13);
+border: 2px solid rgb(156, 13, 13);
+border-radius: 22px;
+background-image: url(projpic.jpg);
+
+}
+.services-list a{
+color:rgb(77, 2, 2);
+font-size: 30px;
+}
+.services-list img {
+    width: 100%; 
+    max-height: 200px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+.project-list div{
+padding:30px;
+background-color:rgb(228, 122, 122);
+border: 2px solid rgb(214, 200, 128);
+border-radius: 22px;
+margin:20px;
+}
+.project-list a{
+color:rgb(206, 6, 6);
+}
+.project-list  {
+    display:flex;
+   
+}
+.img-1{
+background-image: url(spotify.jpg) ;
+opacity: 20px;
+background-repeat: no-repeat;
+background-size: cover; 
+width: 300px; 
+height: 200px;
+opacity:0.7;
+
+}
+.img-2{
+background-image: url(snake\ game.jpg) ;
+background-repeat: no-repeat;
+background-size: cover; 
+width: 300px; 
+height: 200px;
+opacity:0.7;
+}
+.img-3{
+background-image: url(tttt.jpg) ;
+background-repeat: no-repeat;
+background-size: cover; 
+width: 300px; 
+height: 200px;
+opacity:0.7;
+
+}
+.img-4{
+background-image: url(shhop.jpg) ;
+background-repeat: no-repeat;
+background-size: cover; 
+width: 300px; 
+height: 200px;
+opacity:0.7;
+
+
+}
+/* ---------contact---- */
+.contact-left{
+flex-basis:35%;
+}
+.contact-right{
+flex-basis:60%;
+}
+.contact-left p{
+margin-top:30px;
+}
+.contact-left p i{
+margin-right:15px;
+color:red;
+font-size:14px;
+}
+.social-icons a{
+text-decoration: none;
+font-size:30px;
+margin-right:15px;
+color:rgb(173, 235, 169);
+display:inline-block;
+transition:transform 0.5s;
+
+}
+.social-icons a:hover{
+color:aqua;
+transform:translateY(-5px);
+}
+.btn2{
+display:inline block;
+background:green;
+cursor: pointer;
+font-size: 14px;
+padding:6px 30px;
+border-radius: 22px;
+
+}
+.contact-right {
+margin:30px;
+}
+.contact-right form{
+width:100%;
+}
+form input,form textarea{
+width:100%;
+border-radius:22px;
+border:2px solid pink;
+outline:none;
+margin: 15px 2px 15px 0; 
+font-size:20px;
+padding:15px;
+margin:15px 0;
+background: rgb(14, 14, 14);
+color:rgb(178, 173, 173)
+}
+/* Style for the skills section */
+.skills-list {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust column width as needed */
+gap: 20px; /* Adjust the gap between items as needed */
+list-style: none;
+padding: 0;
+}
+
+.skills-item {
+background-color: #310ba1; /* Add a background color to each skill item */
+border-radius: 23px;
+padding: 20px;
+text-align: center;
+}
+
+.skills-title {
+font-size: 18px;
+margin-top: 0;
+}
+
+.skills-data {
+font-size: 24px;
+font-weight: bold;
+margin: 10px 0;
+}
+
+.skills-progress-box {
+height: 10px;
+background-color: #ccc;
+border-radius: 5px;
+margin-top: 10px;
+}
+
+.skills-progress {
+height: 100%;
+border-radius: 5px;
+background-color: #ce350b; /* Change the color to indicate progress */
+}
+.section-text{
+font-size: 33px;
+color:rgb(212, 213, 223);
+font-style: oblique;
+}
+.section-subtitle{
+font-size: 60px;
+color:rgb(150, 146, 211);
+}
+nav.fas{
+display:none;
+}
+/* Add this CSS to your existing styles */
+.section {
+    margin-top: 20px; /* Adjust this value as needed */
+  }
+  
+  /* Optional: If you want to reduce padding around the header elements */
+  header {
+    padding: 10px; /* Adjust this value as needed */
+  }
+  
+  /* Optional: If you want to reduce padding around the navigation */
+  nav {
+    padding: 10px; /* Adjust this value as needed */
+  }
+  
+@media only screen and (max-width:600px){
+.project-list  {
+    display:flex;
+    flex-direction:column;
+    margin:-8px;
+   
+}
+.project-list div {
+    padding:9px;
+}
+.about-col-1 img{
+    width:300px;
+   height:400px;
+}
+.sub-title{
+    font-size: 30px;
+}
+.section-subtitle{
+    font-size:30px;
+}
+.rightsection img {
+    width: 200px;
+}
+.leftsection{
+    margin:22px;
+    font-size: 35px;
+    
+}
+.leftsection {
+    margin: 9px;
+    font-size: 35px;
+    margin-left: 8px;
+}
+.section-text{
+    font-size: 25px;
+    font-style:initial;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 43px -16px
+}
+.links,
+.action-btn{
+    display:none;
+}
+.toggle_btn{
+    display:block;
+} 
+.action-btn1 {
+    display: block; 
+}
+
+ 
+.footer>div {
+    width: 109px;
+}
+.class-footer{
+    padding-top: 85px;
+    padding-right: 296px;
+}
+.dropdown-menu{
+    display:block;
+}
+
+}
+#msg{
+    color:green;
+    margin-top: -40px;
+    display:block;
+}
+
+@media only screen and (max-width:576px){
+.dropdown-menu{
+    left:2rem;
+    width:unset
+}
+}

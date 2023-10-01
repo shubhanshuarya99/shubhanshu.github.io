@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>developer portfolio</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <script src="https://kit.fontawesome.com/1cd870ae66.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <header>
+     <div class="navbar">
+      <div class="logo"><a href="http://">SHUBHANSU ARYA</a></div>
+      <ul class="links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">services</a></li>
+        <li><a href="#projects">projects</a></li>
+         <li><a href="#skills">skills</a></li>
+         <li><a href="#contact">contact</a></li>
+      </ul>
+      <a href="My(resume).pdf" class="action-btn">My Resume</a>
+      <div class="toggle_btn">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+      </div>
+     </div> 
+     <div class="dropdown-menu ">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="My(resume).pdf" class="action-btn1">My Resume</a></li>
+     </div>
+     <main>
+      <section id="hero">
+        Hi,My name is <span class="purple">Shubhansu Arya</span> & <br>
+                 I am a <span id="element"></span>
+      </section>
+     </main>
+    </header>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Developer', 'Web Developer','Software Developer'],
+          typeSpeed: 50,
+        });
+      </script>
+    <script>
+      const toggleBtn =document.querySelector('.toggle_btn')
+      const toggleBtnIcon =document.querySelector('.toggle_btn i')
+      const dropDownMenu =document.querySelector('.dropdown-menu')
+
+      toggleBtn.onclick=function (){
+        dropDownMenu.classList.toggle('open')
+        const isOpen=dropDownMenu.classList.contains('open')
+        toggleBtn.classList=isopen
+        
+        toggleBtn.classList = isOpen ? 'fa-solid fa-circle-xmark' : 'fa-solid fa-ellipsis-vertical';
+
+      }
+    </script>
+
+      <!-- ----------about-------- -->
+      
+      <hr>
+      <div id="about">
+        <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="me.jpeg" alt="" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Currently I am persuing my bachelors of Computer Science and engineering from Chandigarh University
+                  in last 3.5 years I have gained knowledge of many technical compentencies.although have taken and explored many Co-Curicular Activities.
+                  My hobbies are to play cricket and to do singing
+                  <br>
+                  <br>
+                  here below i have mentioned about my skills ,experience and my education click on them to know more about me.
+                </p>
+           
+            <div class="tab-titles">
+                <p class="tab-links activelink" onclick="opentab('skills',event)">skills</p>
+                <p class="tab-links" onclick="opentab('experience',event)">experience</p>
+                <p class="tab-links" onclick="opentab('education',event)">education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI?UX</span><br>Desining web app interfaces</li>
+                    <li><span>web development</span><br>full stack development</li>
+                    <li><span>Coding</span><br>5 star coder in languages like C/C++</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+              
+                <li><span>2020-2023</span><br>learning problem solving in c/c++</li>
+                <li><span>2020-2022</span><br>front end Web development</li>
+                <li><span>2022-2023</span><br>Backend Web development using Php</li>
+                <li><span>2022-2022</span><br>Internship program of 6 weeks (Mohali)</li>
+        </ul>
+    </div>
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2020-2024</span><br>B.Tech-Chandigarh University</li>
+            <li><span>20219-2020</span><br>Intermediate (CBSE) |Jesus Saviours School, Morinda</li>
+            <li><span>20217-2018</span><br>Matriculation (CBSE) | Jesus Saviours School, Morinda</li>
+    </ul>
+</div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!-- --------------services--------- -->
+    <hr>
+    <div id="services">
+           <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Introduction To Cybersecurity</h2>
+                    <img src="cb cer.jpeg" alt="">
+                        <a href="https://drive.google.com/drive/folders/1zE1bO8XxbV-LfFGZlLoEryiNAffghoN1?usp=drive_link">view certificate</a>
+                </div>
+                <div>
+                    <h2>Full Stack Web Development</h2>
+                    <img src="full st cer.jpeg" alt="">
+                        <a href="https://drive.google.com/drive/folders/1zE1bO8XxbV-LfFGZlLoEryiNAffghoN1?usp=drive_link">view certificate</a>
+                </div>
+                <div>
+                    <h2>problem solving</h2>
+                    <img src="hack.jpeg" alt="">
+                        <a href="https://drive.google.com/drive/folders/1zE1bO8XxbV-LfFGZlLoEryiNAffghoN1?usp=drive_link">view certificate</a>
+                </div>
+                <div>
+                    <h2>Solitaire Infosys</h2>
+                    <img src="info.jpeg" alt="">
+                        <a href="https://drive.google.com/drive/folders/1zE1bO8XxbV-LfFGZlLoEryiNAffghoN1?usp=drive_link">view certificate</a>
+                </div>
+                <div>
+                    <h2>Machine Learning</h2>
+                    <img src="ml.jpeg" alt="">
+                        <a href="https://drive.google.com/drive/folders/1zE1bO8XxbV-LfFGZlLoEryiNAffghoN1?usp=drive_link">view certificate</a>
+                </div>
+
+            </div>
+           </div>
+
+    </div>
+    <hr>
+    <div id="project">
+        <div class="container">
+         <h1 class="sub-title">My projects</h1>
+         <div class="project-list">
+             <div class="img-1">
+                 <h2>Spotify Clone</h2>
+                     <a href="https://github.com/shubhanshuarya99">view Project</a>
+             </div>
+             <div class="img-2">
+                 <h2>Snake Game</h2>
+                
+                     <a href="https://github.com/shubhanshuarya99">view Project</a>
+             </div>
+             <div class="img-3">
+                 <h2>Tik Tik App</h2>
+              
+                     <a href="https://github.com/shubhanshuarya99">view Project</a>
+             </div>
+             <div class="img-4">
+                 <h2>Ecommerce Website</h2>
+                
+                     <a href="https://github.com/shubhanshuarya99">view Project</a>
+             </div>
+
+         </div>
+        </div>
+
+ </div>
+ <hr>
+ <!-- ----------------skills------------- -->
+ <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section-subtitle">My Skills</p>
+
+      <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+      <p class="section-text">
+        An investment in knowledge pays the best interest.' So, invest
+        your time and effort in acquiring new skills, expanding your
+        knowledge, and honing your abilities.
+      </p>
+
+      <ul class="skills-list">
+        <li class="skills-item">
+          <div class="wrapper" style="width: 95%">
+            <h3 class="skills-title">C/C++</h3>
+
+            <data class="skills-data" value="95">95%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 95%"></div>
+          </div>
+        </li>
+        <li class="skills-item">
+            <div class="wrapper" style="width: 95%">
+              <h3 class="skills-title">php</h3>
+  
+              <data class="skills-data" value="95">95%</data>
+            </div>
+  
+            <div class="skills-progress-box">
+              <div class="skills-progress" style="width: 95%"></div>
+            </div>
+          </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 70%">
+            <h3 class="skills-title">MySQL</h3>
+
+            <data class="skills-data" value="70">80%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 70%"></div>
+          </div>
+        </li>
+
+        <li class="skills-item">
+          <div class="wrapper" style="width: 75%">
+            <h3 class="skills-title">JavaScript</h3>
+
+            <data class="skills-data" value="75">75%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 75%"></div>
+          </div>
+        </li>
+        <li class="skills-item">
+          <div class="wrapper" style="width: 75%">
+            <h3 class="skills-title">HTML</h3>
+
+            <data class="skills-data" value="75">95%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 95%"></div>
+          </div>
+        </li>
+        <li class="skills-item">
+          <div class="wrapper" style="width: 75%">
+            <h3 class="skills-title">CSS</h3>
+
+            <data class="skills-data" value="75">95%</data>
+          </div>
+
+          <div class="skills-progress-box">
+            <div class="skills-progress" style="width: 95%"></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr>
+ <!-- ------------ contact me-------- -->
+ <div id ="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>shubhanshuarya99@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9814785030</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/s__h__u__b__h._/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100083926272568"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/shubhansu-arya-753b32210/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/shubhanshuarya99"><i class="fab fa-github"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name" placeholder="your Name" Required>
+                    <input type="email" name="Email" placeholder="your email" Required>
+                    <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                    <button type="submit"class="btn2">submit</button>
+                </form>
+                <span id="Msg"></span>
+            </div>
+        </div>
+    </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var contents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("activelink");
+                contents[i].style.display = "none";
+            }
+            
+            document.getElementById(tabname).style.display = "block";
+            event.currentTarget.classList.add("activelink");
+        }
+        
+        opentab("skills");
+    </script>
+    
+<footer>
+        <div class="footer">
+            <div class="footer-first">
+                shubhansu's Developer portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Terms & Condition</li>
+                    
+                    
+                    
+                </ul>
+            </div>
+            
+        <div class="class-footer">
+            www.shubhanshuarya.com &#169;All rights reserved
+        </div>
+
+    </footer>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbyAoWQ4a-eK36sCstgo5WGc1ufmYTqOgYnWluqTSTe_-W2GaZfXjopf_PonyKyHLuFj/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{
+            msg.innerHTML="Message sent succesfully"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+</body>
+</html>
